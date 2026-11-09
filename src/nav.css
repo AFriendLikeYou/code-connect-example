@@ -1,0 +1,79 @@
+/* Kopfzeile der Demo-Seiten, aus denselben Tokens wie die Komponenten. */
+body {
+  background: var(--z-ds-color-background-10);
+  color: var(--z-ds-color-text-100);
+  font-family: var(--z-ds-font);
+  margin: 0;
+}
+
+.demo-nav {
+  display: grid;
+  gap: var(--z-ds-space-xs);
+  margin: 0 auto;
+  max-width: 360px;
+  padding: var(--z-ds-space-xl) var(--z-ds-space-m) 0;
+}
+
+.demo-nav__row {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--z-ds-space-s);
+  justify-content: space-between;
+}
+
+.demo-nav__group {
+  background: var(--z-ds-color-background-20);
+  border-radius: var(--z-ds-border-radius-4);
+  display: flex;
+  gap: 2px;
+  padding: 2px;
+}
+
+.demo-nav__item {
+  background: transparent;
+  border: 0;
+  border-radius: var(--z-ds-border-radius-4);
+  color: var(--z-ds-color-text-55);
+  cursor: pointer;
+  font: 700 14px/1 var(--z-ds-font);
+  padding: var(--z-ds-space-xs) var(--z-ds-space-s);
+  text-decoration: none;
+}
+
+.demo-nav__item[aria-current='page'],
+.demo-nav__item[aria-pressed='true'] {
+  background: var(--z-ds-color-background-0);
+  color: var(--z-ds-color-text-100);
+}
+
+.demo-nav__item:focus-visible {
+  outline: 2px solid var(--z-ds-color-focus-100);
+  outline-offset: 2px;
+}
+
+.demo-nav__hint {
+  color: var(--z-ds-color-text-55);
+  font: 400 14px/1.5 var(--z-ds-font);
+  margin: 0;
+}
+
+.demo-content {
+  display: grid;
+  gap: var(--z-ds-space-l);
+  justify-items: center;
+  padding: var(--z-ds-space-l) var(--z-ds-space-m) var(--z-ds-space-xl);
+}
+
+/* ?nur=… : eine Komponente allein, ohne Kopfzeile, auf weißem Grund (Vorlage für Code → Figma). */
+.demo-nav[hidden] {
+  display: none;
+}
+
+body:has(.demo-content--allein) {
+  background: var(--z-ds-color-background-0);
+}
+
+.demo-content--allein {
+  padding: var(--z-ds-space-xl) var(--z-ds-space-m);
+}

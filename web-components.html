@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dev-Mode-Demo / Web Components</title>
+    <script type="module">
+      import '/src/lib/tokens.css';
+      import '/src/wc/index.js';
+      import '/src/nav.js';
+    </script>
+  </head>
+  <body>
+    <header id="demo-nav" class="demo-nav"></header>
+    <main class="demo-content">
+    <!-- Kein Svelte nötig: reines HTML, wie es auch in Angular, PHP oder einem CMS stehen kann. -->
+    <z-card kicker="Nur bis 30. November" headline="Ein Jahr ZEIT zum halben Preis" text="Alle Z+-Artikel und das E-Paper.">
+      <z-badge slot="badge">Nur kurze Zeit</z-badge>
+      <z-button>4 Wochen für 1 € testen</z-button>
+      <z-button variant="secondary">Alle Angebote ansehen</z-button>
+    </z-card>
+
+    <z-teaser image="/teaser.jpg" alt="Bewaldete Hügel in Singapur, darüber dichter grauer Dunst" kicker="Singapur" headline="Wenn der Nachbar Feuer legt" text="Indonesische Plantagenbesitzer brennen Wälder nieder und verpesten so die Luft in Singapur. Jetzt wehrt sich der Stadtstaat und setzt Investoren und Konzerne unter Druck." author="Von Thomas Fischermann, Singapur"></z-teaser>
+    <z-teaser layout="small" image="/teaser.jpg" alt="" kicker="Singapur" headline="Wenn der Nachbar Feuer legt" author="Von Thomas Fischermann, Singapur"></z-teaser>
+    </main>
+  </body>
+</html>

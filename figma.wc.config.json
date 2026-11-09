@@ -1,0 +1,12 @@
+{
+  "codeConnect": {
+    "include": [
+      "src/wc/**/*.figma.ts"
+    ],
+    "label": "Web Components",
+    "language": "html",
+    "documentUrlSubstitutions": {
+      "<FIGMA_FILE>": "https://www.figma.com/design/aldKfnvuW7isNBP59Lq1kp/Dev-Mode"
+    }
+  }
+}

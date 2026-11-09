@@ -1,0 +1,9 @@
+node_modules
+dist
+
+# Geheimnisse: alle .env-Dateien bleiben lokal, nur die leere Vorlage kommt ins Repo.
+.env
+.env.*
+!.env.example
+
+.DS_Store

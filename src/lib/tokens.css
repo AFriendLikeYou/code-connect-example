@@ -1,0 +1,55 @@
+/* ZDS-Tokens, die diese Demo nutzt. Namen und Werte stammen aus der Figma-Library
+   „❖ ZDS“ (Sammlungen Colors, Spacings, Primitives): der Code-Name jeder Variable ist der
+   CSS-Name hier. Dark gilt per System-Einstellung oder mit data-theme="dark". */
+:root {
+  --z-ds-color-background-0: #ffffff;
+  --z-ds-color-background-10: #eeeeee;
+  --z-ds-color-background-20: #dfdfe1;
+  --z-ds-color-text-100: #252525;
+  --z-ds-color-text-70: #444444;
+  --z-ds-color-text-55: #69696c;
+  --z-ds-color-border-70: #e4e4e4;
+  --z-ds-color-accent-100: #b91109;
+  --z-ds-color-focus-100: #005fcc;
+
+  --z-ds-space-xxxs: 4px;
+  --z-ds-space-xxs: 6px;
+  --z-ds-space-xs: 8px;
+  --z-ds-space-s: 12px;
+  --z-ds-space-m: 16px;
+  --z-ds-space-l: 24px;
+  --z-ds-space-xl: 32px;
+
+  --z-ds-border-radius-4: 4px;
+
+  --z-ds-font: 'Tablet Gothic', 'TabletGothic', 'Helvetica Neue', Arial, sans-serif;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --z-ds-color-background-0: #121212;
+    --z-ds-color-background-10: #232323;
+    --z-ds-color-background-20: #2e2e2e;
+    --z-ds-color-text-100: #ffffff;
+    --z-ds-color-text-70: #bababa;
+    --z-ds-color-text-55: #999999;
+    --z-ds-color-border-70: #2e2e2e;
+    --z-ds-color-accent-100: #eb362e;
+    --z-ds-color-focus-100: #54a3fe;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme='dark'] {
+  --z-ds-color-background-0: #121212;
+  --z-ds-color-background-10: #232323;
+  --z-ds-color-background-20: #2e2e2e;
+  --z-ds-color-text-100: #ffffff;
+  --z-ds-color-text-70: #bababa;
+  --z-ds-color-text-55: #999999;
+  --z-ds-color-border-70: #2e2e2e;
+  --z-ds-color-accent-100: #eb362e;
+  --z-ds-color-focus-100: #54a3fe;
+  color-scheme: dark;
+}

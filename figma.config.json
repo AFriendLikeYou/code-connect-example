@@ -1,0 +1,12 @@
+{
+  "codeConnect": {
+    "include": [
+      "src/lib/**/*.figma.ts"
+    ],
+    "label": "Svelte",
+    "language": "jsx",
+    "documentUrlSubstitutions": {
+      "<FIGMA_FILE>": "https://www.figma.com/design/aldKfnvuW7isNBP59Lq1kp/Dev-Mode"
+    }
+  }
+}

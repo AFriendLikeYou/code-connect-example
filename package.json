@@ -1,0 +1,20 @@
+{
+  "name": "devmode-demo",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Demo für die Dev-Mode-Präsentation: drei Svelte-Komponenten, Tokens wie in Figma, Code Connect.",
+  "scripts": {
+    "dev": "vite --port 5190",
+    "build": "vite build",
+    "figma:parse": "figma connect parse && figma connect parse -c figma.wc.config.json",
+    "figma:dry-run": "node --env-file-if-exists=.env node_modules/.bin/figma connect publish --dry-run && node --env-file-if-exists=.env node_modules/.bin/figma connect publish -c figma.wc.config.json --dry-run",
+    "figma:publish": "node --env-file-if-exists=.env node_modules/.bin/figma connect publish && node --env-file-if-exists=.env node_modules/.bin/figma connect publish -c figma.wc.config.json"
+  },
+  "devDependencies": {
+    "@figma/code-connect": "^2.1.0",
+    "@sveltejs/vite-plugin-svelte": "^7.3.1",
+    "svelte": "^5.57.3",
+    "vite": "^8.3.6"
+  }
+}
